@@ -154,6 +154,4 @@
 </div>
 <!-- .animated -->
 
-@push('befor-script')
-
 @endsection

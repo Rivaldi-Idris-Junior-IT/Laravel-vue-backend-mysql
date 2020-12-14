@@ -13,5 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\DashboardController@index');
+Auth::routes(['register' => false]);
 
+Route::get('/', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
+
+Route::resource('products', 'App\Http\Controllers\ProductController');
+
+Route::resource('product-galleries', 'App\Http\Controllers\ProductGalleryController');
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

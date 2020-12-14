@@ -1,0 +1,13 @@
+* Menjalankan laravel
+> php artisan serve
+* Membuat Migration
+> php artisan make:migration create_flights_table --create=flights
+* Menjalankan migration 
+> php artisan migrate
+* Membuat Controller
+> php artisan make:controller PhotoController --resource
+* Membuat Model 
+> php artisan make:model Models\\Product
+* Membuat Request
+> php artisan make:request ProductRequest
+
